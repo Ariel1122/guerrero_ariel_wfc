@@ -4,7 +4,7 @@ const celdas = []; //4x4
 const RETICULA = 8;
 //tanto el numero de azulejos y reticulas van en mayuscula al ser numeros que no van a varias, en minusculas son array que si cambian
 const azulejos = [];
-const NA = 32; //numero de azulejos
+const NA = 14; //numero de azulejos
 let opcionesI = [];
 
 let ancho;
@@ -68,41 +68,41 @@ const reglas = [
     DOWN: 0,
     LEFT: 0,
   },
-  {
-    //tiles8
-    UP: 0,
-    RIGHT: 5,
-    DOWN: 0,
-    LEFT: 0,
-  },
-  {
-    //tiles9
-    UP: 1,
-    RIGHT: 2,
-    DOWN: 0,
-    LEFT: 5,
-  },
-  {
-    //tiles10
-    UP: 0,
-    RIGHT: 2,
-    DOWN: 0,
-    LEFT: 2,
-  },
-  {
-    //tiles11
-    UP: 0,
-    RIGHT: 0,
-    DOWN: 0,
-    LEFT: 2,
-  },
-  {
-    //tiles12
-    UP: 3,
-    RIGHT: 0,
-    DOWN: 3,
-    LEFT: 0,
-  },
+  // {
+  //     //tiles8
+  //     UP: 0,
+  //     RIGHT: 5,
+  //     DOWN: 0,
+  //     LEFT: 0,
+  //   },
+  //   {
+  //     //tiles9
+  //     UP: 1,
+  //     RIGHT: 2,
+  //     DOWN: 0,
+  //     LEFT: 5,
+  //   },
+  //   {
+  //     //tiles10
+  //     UP: 0,
+  //     RIGHT: 2,
+  //     DOWN: 0,
+  //     LEFT: 2,
+  //   },
+  //   {
+  //     //tiles11
+  //     UP: 0,
+  //     RIGHT: 0,
+  //     DOWN: 0,
+  //     LEFT: 2,
+  //   },
+  //   {
+  //     //tiles12
+  //     UP: 3,
+  //     RIGHT: 0,
+  //     DOWN: 3,
+  //     LEFT: 0,
+  //   },
   {
     //tiles13
     UP: 0,
@@ -117,41 +117,41 @@ const reglas = [
     DOWN: 1,
     LEFT: 0,
   },
-  {
-    //tiles15
-    UP: 0,
-    RIGHT: 0,
-    DOWN: 3,
-    LEFT: 0,
-  },
-  {
-    //tiles16
-    UP: 3,
-    RIGHT: 5,
-    DOWN: 0,
-    LEFT: 0,
-  },
-  {
-    //tiles17
-    UP: 0,
-    RIGHT: 5,
-    DOWN: 0,
-    LEFT: 5,
-  },
-  {
-    //tiles18
-    UP: 1,
-    RIGHT: 2,
-    DOWN: 1,
-    LEFT: 5,
-  },
-  {
-    //tiles19
-    UP: 3,
-    RIGHT: 0,
-    DOWN: 0,
-    LEFT: 2,
-  },
+  //   {
+  //     //tiles15
+  //     UP: 0,
+  //     RIGHT: 0,
+  //     DOWN: 3,
+  //     LEFT: 0,
+  //   },
+  //   {
+  //     //tiles16
+  //     UP: 3,
+  //     RIGHT: 5,
+  //     DOWN: 0,
+  //     LEFT: 0,
+  //   },
+  //   {
+  //     //tiles17
+  //     UP: 0,
+  //     RIGHT: 5,
+  //     DOWN: 0,
+  //     LEFT: 5,
+  //   },
+  //   {
+  //     //tiles18
+  //     UP: 1,
+  //     RIGHT: 2,
+  //     DOWN: 1,
+  //     LEFT: 5,
+  //   },
+  //   {
+  //     //tiles19
+  //     UP: 3,
+  //     RIGHT: 0,
+  //     DOWN: 0,
+  //     LEFT: 2,
+  //   },
   {
     //tiles620
     UP: 0,
@@ -166,20 +166,20 @@ const reglas = [
     DOWN: 1,
     LEFT: 0,
   },
-  {
-    //tiles22
-    UP: 1,
-    RIGHT: 0,
-    DOWN: 4,
-    LEFT: 0,
-  },
-  {
-    //tiles23
-    UP: 0,
-    RIGHT: 0,
-    DOWN: 3,
-    LEFT: 0,
-  },
+  //   {
+  //     //tiles22
+  //     UP: 1,
+  //     RIGHT: 0,
+  //     DOWN: 4,
+  //     LEFT: 0,
+  //   },
+  //   {
+  //     //tiles23
+  //     UP: 0,
+  //     RIGHT: 0,
+  //     DOWN: 3,
+  //     LEFT: 0,
+  //   },
   {
     //tiles24
     UP: 1,
@@ -187,48 +187,48 @@ const reglas = [
     DOWN: 0,
     LEFT: 0,
   },
-  {
-    //tiles25
-    UP: 0,
-    RIGHT: 5,
-    DOWN: 0,
-    LEFT: 5,
-  },
-  {
-    //tiles26
-    UP: 4,
-    RIGHT: 0,
-    DOWN: 4,
-    LEFT: 0,
-  },
-  {
-    //tiles27
-    UP: 0,
-    RIGHT: 2,
-    DOWN: 0,
-    LEFT: 2,
-  },
-  {
-    //tiles28
-    UP: 0,
-    RIGHT: 0,
-    DOWN: 0,
-    LEFT: 2,
-  },
-  {
-    //tiles29
-    UP: 0,
-    RIGHT: 5,
-    DOWN: 0,
-    LEFT: 0,
-  },
-  {
-    //tiles30
-    UP: 4,
-    RIGHT: 0,
-    DOWN: 0,
-    LEFT: 0,
-  },
+  //   {
+  //     //tiles25
+  //     UP: 0,
+  //     RIGHT: 5,
+  //     DOWN: 0,
+  //     LEFT: 5,
+  //   },
+  //   {
+  //     //tiles26
+  //     UP: 4,
+  //     RIGHT: 0,
+  //     DOWN: 4,
+  //     LEFT: 0,
+  //   },
+  //   {
+  //     //tiles27
+  //     UP: 0,
+  //     RIGHT: 2,
+  //     DOWN: 0,
+  //     LEFT: 2,
+  //   },
+  //   {
+  //     //tiles28
+  //     UP: 0,
+  //     RIGHT: 0,
+  //     DOWN: 0,
+  //     LEFT: 2,
+  //   },
+  //   {
+  //     //tiles29
+  //     UP: 0,
+  //     RIGHT: 5,
+  //     DOWN: 0,
+  //     LEFT: 0,
+  //   },
+  //   {
+  //     //tiles30
+  //     UP: 4,
+  //     RIGHT: 0,
+  //     DOWN: 0,
+  //     LEFT: 0,
+  //   },
   {
     //tiles31
     UP: 0,
